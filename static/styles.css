@@ -1,8 +1,10 @@
 body {
-    background-image: url('img/background.gif');
-    background-position: right;
+    margin: 0;
+    overflow: hidden;
     background-size: contain;
+    background-position: right;
     background-repeat: no-repeat;
+    background-image: url('img/background.gif');
     background-color: #FBFBFB
 }
 
