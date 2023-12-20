@@ -8,9 +8,13 @@
 </head>
 <body>
     <div class="hello">
-        <div>Привіт, {{ name }}!)</div>
+        <div>Привіт, друже, як тебе звати?</div>
         </br>
-        <div>Це наш майбутній проект</div>
+        <form method="POST" action="greet">
+            {% csrf_token %}
+            <input type="text" name="greet_name">
+            <button type="submit">Ok, let`s send it!</button>
+        </form>
     </div>
 </body>
 </html>
